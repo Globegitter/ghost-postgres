@@ -75,6 +75,8 @@ code/ghost-postgres/
 |   Tests
 |-- README.md
 |   This file
+|-- .travis.yml
+|   Travis config file
 `-- util.go
     Helper functions
 ```
