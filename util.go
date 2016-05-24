@@ -40,7 +40,7 @@ func waitForService(db *sql.DB) error {
 	// TODO configurable
 	b := &backoff.Backoff{
 		Min:    100 * time.Millisecond,
-		Max:    2 * time.Second,
+		Max:    5 * time.Second,
 		Factor: 2,
 		Jitter: false,
 	}
