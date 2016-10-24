@@ -31,12 +31,14 @@ var (
 		"/usr/local/initdb",
 		"/usr/lib/postgresql/*/bin/initdb",      // for Debian/Ubuntu
 		"/opt/local/lib/postgresql*/bin/initdb", // for MacPorts
+		"/usr/local/bin/initdb",                 // for Homebrew
 	}
 	defaultPostgresGlobs = []string{
 		"/usr/local/pgsql/bin/postgres",
 		"/usr/local/postgres",
 		"/usr/lib/postgresql/*/bin/postgres",      // for Debian/Ubuntu
 		"/opt/local/lib/postgresql*/bin/postgres", // for MacPorts
+		"/usr/local/bin/postgres",                 // for Homebrew
 	}
 	defaultConnOptions = []string{
 		"sslmode=disable",
