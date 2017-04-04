@@ -32,6 +32,7 @@ var (
 		"/usr/lib/postgresql/*/bin/initdb",      // for Debian/Ubuntu
 		"/opt/local/lib/postgresql*/bin/initdb", // for MacPorts
 		"/usr/local/bin/initdb",                 // for Homebrew
+		"/usr/bin/initdb",                       // for Alpine
 	}
 	defaultPostgresGlobs = []string{
 		"/usr/local/pgsql/bin/postgres",
@@ -39,6 +40,7 @@ var (
 		"/usr/lib/postgresql/*/bin/postgres",      // for Debian/Ubuntu
 		"/opt/local/lib/postgresql*/bin/postgres", // for MacPorts
 		"/usr/local/bin/postgres",                 // for Homebrew
+		"/usr/bin/postgres",                       // for Alpine
 	}
 	defaultConnOptions = []string{
 		"sslmode=disable",
